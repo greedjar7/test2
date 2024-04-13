@@ -16,9 +16,3 @@
     get_jobkorea_list()
   </script>
   
-  <ul>
-    {#each jobkorea_list as jobkorea_data}
-      <li><a use:link href="/detail/{jobkorea_data.id}">{jobkorea_data.company}</a></li>
-    {/each}
-  </ul>
-  
