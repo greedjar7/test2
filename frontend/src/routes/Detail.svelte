@@ -22,12 +22,3 @@
     {jk_data_detail.tech_detail}<br>
     {jk_data_detail.link}
 </div>
-
-<style>
-    textarea {
-        width:100%;
-    }
-    input[type=submit] {
-        margin-top:10px;
-    }    
-</style>

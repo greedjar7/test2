@@ -15,6 +15,6 @@ def jobkorea_list(db:Session=Depends(get_db)):
     return _jk_list
 
 @router.get("/detail/{jk_data_id}", response_model=jobkorea_schema.Jobkorea)
-def question_detail(jk_data_id: int, db: Session = Depends(get_db)):
+def get_jk_detail(jk_data_id: int, db: Session = Depends(get_db)):
     detail = jobkorea_crud.get_jk_detail(db, jk_data_id=jk_data_id)
     return detail
